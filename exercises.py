@@ -49,3 +49,46 @@ def largest(a, b, c):
     return max(a, b, c)
 
 print('Exercise 6:', largest(1, 2, 3))
+
+
+# Exercise 7: Calculate a Tip
+def calculate_tip(bill_amount, tip_percentage):
+    return (bill_amount * tip_percentage) / 100
+
+# Write your function and test its output below.
+print('Exercise 7:', calculate_tip(50, 20))
+
+
+# Exercise 8: Calculate Product of Numbers
+def product(*args):
+    result = 1
+    for number in args:
+        result *= number
+    return result
+
+# Define the function and call it with different sets of numbers to test.
+print('Exercise 8:', product(2, 5, 5))
+
+
+
+# Exercise 9: Basic Calculator
+def basic_calculator(a, b, operation):
+    if operation == 'add':
+        return a + b
+    elif operation == 'subtract':
+        return a - b
+    elif operation == 'multiply':
+        return a * b
+    elif operation == 'divide':
+        if b != 0:
+            return a / b
+        else:
+            return "Error! Division by zero."
+    else:
+        return "Invalid operation."
+
+# Define the function and then call it below.
+print('Exercise 9 Result:', basic_calculator(10, 5, "subtract"))
+print('Exercise 9 Result:', basic_calculator(10, 5, "add"))
+print('Exercise 9 Result:', basic_calculator(10, 5, "multiply"))
+print('Exercise 9 Result:', basic_calculator(10, 5, "divide"))
